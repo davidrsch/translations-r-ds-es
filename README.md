@@ -1,24 +1,40 @@
-# 🌍 R y Ciencia de Datos (R and Data Science in Spanish)
+# 🌍 R y Ciencia de Datos en Español
 
-A collaborative, open-access project translating key R and Data Science books into Spanish.
-Born as a personal learning effort, it has grown into a community-driven initiative aimed at making world-class R resources accessible to Spanish-speaking learners, educators, and professionals.
+Proyecto colaborativo y de acceso libre para traducir los libros más importantes de R y Ciencia de Datos al español.
+Nació como un esfuerzo personal de aprendizaje y ha crecido hasta convertirse en una iniciativa comunitaria para hacer los mejores recursos de R accesibles a estudiantes, educadores y profesionales hispanohablantes.
 
-## 📘 Translated Works
+## 📚 Traducciones
 
-- Programación Práctica con R — Garrett Grolemund
-- R para la Ciencia de Datos — Hadley Wickham, Mine Çetinkaya-Rundel & Garrett Grolemund
-- Git & GitHub con R — Jenny Bryan & collaborators
-- Modelado Ordenado con R — Max Kuhn & Julia Silge
-- R Avanzado — Hadley Wickham
-- Paquetes de R — Hadley Wickham & Jenny Bryan
-- ggplot2: Gráficos Elegantes para Análisis de Datos — Hadley Wickham, Danielle Navarro & Thomas Lin Pedersen
+| Libro                                                           | Autores                                                   | Traducción                                              | Fuente                                                                  |
+| --------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **Programación Práctica con R**                                 | Garrett Grolemund                                         | [hopr-es](https://davidrsch.github.io/hopr-es/)         | [rstudio-education/hopr](https://github.com/rstudio-education/hopr)     |
+| **R para la Ciencia de Datos (2ª ed.)**                         | Hadley Wickham, Mine Çetinkaya-Rundel & Garrett Grolemund | [r4ds-es](https://davidrsch.github.io/r4ds-es/)         | [hadley/r4ds](https://github.com/hadley/r4ds)                           |
+| **Git y GitHub con R**                                          | Jenny Bryan & colaboradores                               | [hggh4r-es](https://davidrsch.github.io/hggh4r-es/)     | [jennybc/happy-git-with-r](https://github.com/jennybc/happy-git-with-r) |
+| **Modelado Ordenado con R**                                     | Max Kuhn & Julia Silge                                    | [tmwr-es](https://davidrsch.github.io/tmwr-es/)         | [tidymodels/TMwR](https://github.com/tidymodels/TMwR)                   |
+| **R Avanzado**                                                  | Hadley Wickham                                            | [advr-es](https://davidrsch.github.io/advr-es/)         | [hadley/adv-r](https://github.com/hadley/adv-r)                         |
+| **Paquetes de R**                                               | Hadley Wickham & Jenny Bryan                              | [rpkgs-es](https://davidrsch.github.io/rpkgs-es/)       | [hadley/r-pkgs](https://github.com/hadley/r-pkgs)                       |
+| **ggplot2: Gráficos Elegantes para Análisis de Datos (3ª ed.)** | Hadley Wickham, Danielle Navarro & Thomas Lin Pedersen    | [ggplot2b-es](https://davidrsch.github.io/ggplot2b-es/) | [hadley/ggplot2-book](https://github.com/hadley/ggplot2-book)           |
 
-## 🎯 Objectives
+## 🎯 Objetivos
 
-- Make high-quality R learning materials available in Spanish.
-- Promote best practices in R programming and reproducible research.
-- Foster collaboration and knowledge sharing across the global R community.
+- Poner materiales de aprendizaje de R de alta calidad a disposición en español.
+- Promover las buenas prácticas en programación R e investigación reproducible.
+- Fomentar la colaboración y el intercambio de conocimiento en la comunidad global de R.
 
-## 🤝 Contribute
+## ⚙️ Automatización
 
-- This is an open project, contributions are welcome! Help us translate, review, or improve materials to strengthen the R ecosystem in Spanish.
+Cada repositorio de traducción incluye un flujo de trabajo de **revisión mensual automática** (GitHub Actions) que:
+
+1. Se ejecuta el 1.º de cada mes.
+2. Obtiene la lista de archivos fuente del repositorio original upstream.
+3. Compara la estructura de capítulos con la traducción.
+4. Usa un **agente IA** (GitHub Models / `gpt-4o-mini`) para analizar diferencias y generar un resumen accionable en español.
+5. Abre automáticamente un **Pull Request** con el informe si se detectan cambios estructurales.
+
+Los informes históricos se guardan en `.github/upstream-checks/` dentro de cada repo.
+
+## 🤝 Contribuir
+
+¡Este es un proyecto abierto; las contribuciones son bienvenidas! Ayuda a traducir, revisar o mejorar los materiales para fortalecer el ecosistema de R en español.
+
+Consulta el archivo `CONTRIBUTING.md` del repositorio de traducción correspondiente para más detalles.
